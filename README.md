@@ -9,7 +9,7 @@ This project implements basic authentication features: a user can sign up for an
 
 ## ✨ What I Have Learned
 
-The passwords are never stored directly in the database as text, instead we run the password through a **hashing function** first and then store the result in the database. Hushing functions are functions that map input data of some arbitrary size to fixed-size output values, and they are one-way functions that are infeasible to invert. **BCRYPT** is one of few commonly used password hashing functions (and it's been used in this project).
+The passwords are never stored directly in the database as text, instead we run the password through a **hashing function** first and then store the result in the database. Hushing functions are functions that map input data of some arbitrary size to fixed-size output values, and they are one-way functions that are infeasible to invert. **BCRYPT** is one of few commonly used password hashing functions (which is used in this project).
 
 In the real-world application, **salting** is an extra step that we take when we’re hashing a password to make it harder to reverse. It refers to the practice of adding random information to a password at the beginning or at the end before we hash it. It will radically change the output to ensure unique hashes and mitigate common attacks.
 
